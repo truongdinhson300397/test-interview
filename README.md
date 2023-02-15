@@ -6,5 +6,3 @@
 ### Seed data
     php artisan db:seed
 
-### Calculate point by invite friends
-    php artisan point:add-point-by-invite-friends
