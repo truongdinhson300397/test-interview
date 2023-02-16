@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class PostFactory extends Factory
+class CategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,7 +16,7 @@ class PostFactory extends Factory
     {
         return [
 //            'id' => Str::uuid()->toString(),
-            'name' => $this->faker->name()
+            'name' => $this->faker->title()
         ];
     }
 }

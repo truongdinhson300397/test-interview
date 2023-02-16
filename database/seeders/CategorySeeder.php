@@ -14,11 +14,13 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        $data = ['Tin tức', 'Review', 'Event', 'test1', 'test2'];
+        $data = ['Tin tức', 'Review', 'Event'];
         foreach ($data as $item) {
             Category::query()->create([
                'name' =>  $item
             ]);
         }
+
+        Category::factory(10)->create();
     }
 }
